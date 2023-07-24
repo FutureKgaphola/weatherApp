@@ -98,7 +98,7 @@ function App() {
           
           <div className="card-body">
             {
-              data.main ? <h2 className="card-title">{(data.main.temp-273.15).toFixed(1)} °C</h2> : null
+              data.main ? <h2 className="card-title">{(data.main.temp-273.15).toFixed(0)} °C</h2> : null
             }
             {
               data.weather ? <p className="card-text">{data.weather[0].description}</p> : null
